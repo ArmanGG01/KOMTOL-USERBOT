@@ -23,8 +23,8 @@
   
 #### JOIN YA KE KITARO SUPPORT!!
 
-<a href="https://t.me/rumahkitaro"><img src="https://img.shields.io/badge/Channel%20KITARO%20SUPPORT-red.svg?style=for-the-badge&logo=Telegram"></a>
-<a href="https://t.me/Kitarohey"><img src="https://img.shields.io/badge/Join-KITARO%20goblok-purple.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://t.me/kitarochannel"><img src="https://img.shields.io/badge/Channel%20KITARO%20SUPPORT-red.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://t.me/rumahkitaroo"><img src="https://img.shields.io/badge/Join-KITARO%20Support-purple.svg?style=for-the-badge&logo=Telegram"></a>
 
 
 ### AMBIL STRING DI BAWAH INI:
