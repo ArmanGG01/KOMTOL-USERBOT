@@ -270,7 +270,7 @@ async def amireallyalive(alive):
         f"❃ **😎Versi Bot**   ➥ `7.1` \n"
         f"❃ **📕Modul**       ➥ `{len(modules)}` \n\n"
         f"**▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰**\n"
-        f"[{REPO_NAME}](https://github.com/kitaroo/KITARO-USERBOT) || [𝗚𝗥𝗢𝗨𝗣](t.me/rumahkitaro) || [𝗜𝗡𝗦𝗧𝗔𝗚𝗥𝗔𝗠]({IG_ALIVE})\n"
+        f"[{REPO_NAME}](https://github.com/kitaroo/KITARO-USERBOT) || [𝗚𝗥𝗢𝗨𝗣](t.me/rumahkitaroo) || [𝗜𝗡𝗦𝗧𝗔𝗚𝗥𝗔𝗠]({IG_ALIVE})\n"
         f"**▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰ **")
     if ALIVE_LOGO:
         try:
@@ -315,7 +315,7 @@ async def redis(alive):
         f"┣  `Bot Ver  :` {BOT_VER} \n"
         f"┣  `Modules  :` {len(modules)} Modules \n"
         f"┣  `GitHub   :` [kitaro](https://github.com/kitaroo/KITARO-USERBOT) \n"
-        f"┣  `Support  :` [Groups](https://t.me/rumahkitaro) \n"
+        f"┣  `Support  :` [Groups](https://t.me/rumahkitaroo) \n"
         f"┣  `Owner    :` [Kitaro](https://t.me/kitarohey) \n"
         f"┗━━━━━━━━━━━━━━━━━━━")
     if ALIVE_LOGO:
