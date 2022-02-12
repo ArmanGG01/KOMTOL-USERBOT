@@ -25,11 +25,10 @@ from userbot.events import register
 
 KANGING_STR = [
     "BERUSAHA MENCURY TIKEL INI! HAHAHA",
-    "GUA NYOLONG TIKEL LU YA NGENTOTTTT!",
 ]
 
 
-@register(outgoing=True, pattern=r"^\.(?:tikel|kang)\s?(.)?")
+@register(outgoing=True, pattern=r"^\.(kang)\s?(.)?")
 async def kang(args):
     user = await bot.get_me()
     if not user.username:
