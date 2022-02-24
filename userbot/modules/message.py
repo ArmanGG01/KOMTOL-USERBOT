@@ -60,7 +60,7 @@ async def purgeme(delme):
 
     smsg = await delme.client.send_message(
         delme.chat_id,
-        "`Berhasil Menghilangkan Jejak Chatsex,` " + str(count) + " `Jejak Chatsex telah terhapus`",
+        "`Berhasil Menghilangkan Jejak GiveAway,` " + str(count) + " `Jejak GiveAway telah terhapus`",
     )
     """
     if BOTLOG:
@@ -73,7 +73,7 @@ async def purgeme(delme):
     await smsg.delete()
 
 
-@register(outgoing=True, pattern=r"^\Del$")
+@register(outgoing=True, pattern=r"^\.del$")
 async def delete_it(delme):
     msg_src = await delme.get_reply_message()
     if delme.reply_to_msg_id:
@@ -134,7 +134,7 @@ CMD_HELP.update({"purge": ">`.purge`"
                  "\nUsage: Membersihkan semua pesan mulai dari pesan yang dibalas.",
                  "purgeme": ">`.purgeme <angka>`"
                  "\nUsage: Menghapus jumlah pesan anda, yang mau anda hapus.",
-                 "del": ">`Del`"
+                 "del": ">`.del`"
                  "\nUsage: Menghapus pesan, balas ke pesan.",
                  "edit": ">`.edit <pesan baru>`"
                  "\nUsage: Ganti pesan terakhir Anda dengan <pesan baru>.",
