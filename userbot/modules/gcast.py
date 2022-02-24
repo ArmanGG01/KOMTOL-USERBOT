@@ -21,13 +21,14 @@ GCAST_BLACKLIST = [
     -1001327032795,  # UltroidSupport
     -1001294181499,  # UserBotIndo
     -1001419516987,  # VeezSupportGroup
-    -1001209432070,  # GeezSupportGroup
+    -1001459812644,  # GeezSupportGroup
     -1001296934585,  # X-PROJECT BOT
     -1001481357570,  # UsergeOnTopic
     -1001459701099,  # CatUserbotSupport
     -1001109837870,  # TelegramBotIndonesia
     -1001752592753,  # Skyzusupport
-    -1001273141346, # Remix Support Vegeta
+    -1001273141346,  # Remix Support Vegeta
+    -1001386557465,  # RumahKitaroo 
 ]
 
 
@@ -39,9 +40,9 @@ async def gcast(event):
     elif event.is_reply:
         msg = await event.get_reply_message()
     else:
-        await event.edit("**Berikan Sebuah Pesan atau Reply**")
+        await event.edit("**Berikan Sebuah Pesan Give Away atau Reply**")
         return
-    kk = await event.edit("`Globally Broadcasting Msg...`")
+    kk = await event.edit("`Memberi Tahu Semua Orang Kalau Disini Ada Give Away...`")
     er = 0
     done = 0
     async for x in event.client.iter_dialogs():
@@ -56,7 +57,7 @@ async def gcast(event):
             except BaseException:
                 er += 1
     await kk.edit(
-        f"**Berhasil Mengirim Pesan Ke** `{done}` **Grup, Gagal Mengirim Pesan Ke** `{er}` **Grup**"
+        f"**Berhasil Memberitahu Ke Group Lain** `{done}` **Grup, Gagal Mengirim Pesan Ke** `{er}` **Grup**"
     )
 
 
