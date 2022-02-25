@@ -1,6 +1,6 @@
 {
-  "name": "KITARO-USERBOT",
-  "description": "[KITARO-USERBOT] USERBOT HANYA UNTUK BERSENANG-SENANG DI TELEGRAM.",
+  "name": "KONTOL-USERBOT",
+  "description": "[KONTOL-USERBOT] USERBOT HANYA UNTUK BERSENANG-SENANG DI TELEGRAM.",
   "logo": "https://telegra.ph/file/28d9f4c90f60f0b7190d3.jpg",
   "keywords": [
     "telegram",
@@ -9,9 +9,9 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/kitaroo/KITARO-USERBOT.",
-  "telegram": "https://t.me/Kitarohey",
-  "success_url": "https://t.me/gsahmanja",
+  "repository": "https://github.com/ArmanGG01/KONTOL-USERBOT.",
+  "telegram": "https://t.me/PakkPoll",
+  "success_url": "https://t.me/obrolansuar",
   "stack": "container",
   "env": {
     "API_KEY": {
@@ -28,16 +28,16 @@
       "required": true
      },
      "STRING_SESSION": {
-      "description": "Ambil String Session di link https://t.me/githubxsvshacker/602.",
+      "description": "Ambil String Session di link @StringManRobot",
       "required": true
     },
     "HEROKU_APP_NAME": {
-      "description": "Nama App heroku, Nama App yang paling pertama di isi (liat paling atas)",
+      "description": "Nama App heroku, Nama App yang paling pertama di isi (liat paling atas kontol)",
       "required": true
     },
     "HEROKU_API_KEY": {
       "description": "Heroku API KEY mu, dapatkan dari web 'https://dashboard.heroku.com/account'",
-      "value": "Check Di Heroku Dashboard Mu",
+      "value": "Check Di Heroku Dashboard Mu lah kontol",
       "required": true
     },
     "BOTLOG": {
@@ -47,7 +47,7 @@
     },
     "BOTLOG_CHATID": {
       "description": "Buatlah sebuah grup private/public masukan @MissRose_bot lalu ketik /id, Salin dan hapus id dibawah ini, Lalu tempel.",
-      "value": "-Id group",
+      "value": "-Id group kau kontol isi di sini",
       "required": true
     },
     "COUNTRY": {
@@ -83,12 +83,12 @@
     },
     "ALIVE_NAME": {
       "description": "Nama untuk menunjukan pesan .alive",
-      "value": "KITARO-USERBOT",
+      "value": "KONTOL-USERBOT",
       "required": true
     },
     "S_PACK_NAME": {
       "description": "Nama Sticker Pack Mu",
-      "value": "kang",
+      "value": "KONTOL",
       "required": false
     },
     "G_BAN_LOGGER_GROUP": {
