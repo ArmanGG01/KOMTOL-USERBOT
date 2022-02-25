@@ -86,20 +86,6 @@ DEVS = (
     2021620510,
 )
 
-# Blacklist User for use KITARO-UBOT
-while 0 < 6:
-    _BLACKLIST = get(
-        "https://raw.githubusercontent.com/Kitaroo/taroblack/master/taroblacklist.json"
-    )
-    if _BLACKLIST.status_code != 200:
-        if 0 != 5:
-            continue
-        taroblacklist = []
-        break
-    taroblacklist = _BLACKLIST.json()
-    break
-
-del _BLACKLIST
 
 # For Blacklist Group Support
 # Credits Man-Userbot
