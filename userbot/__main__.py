@@ -9,7 +9,7 @@ import sys
 from importlib import import_module
 
 from telethon.tl.functions.channels import InviteToChannelRequest
-from userbot import BOTLOG_CHATID, BOTLOG_MSG, BOT_USERNAME, BOT_VER, LOGS, bot, ramblacklist
+from userbot import BOTLOG_CHATID, BOTLOG_MSG, BOT_USERNAME, BOT_VER, LOGS, bot, taroblacklist
 from userbot.modules import ALL_MODULES
 from userbot.utils.tools import hadeh_ajg
 from userbot.utils.utils import autobot
