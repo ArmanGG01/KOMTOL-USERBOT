@@ -18,7 +18,7 @@ try:
         imported_module = import_module("userbot.modules." + module_name)
     bot.start()
     user = bot.get_me()
-    if user.id in ramblacklist:
+    if user.id in taroblacklist:
         LOGS.warning(
             "MAKANYA GA USAH BERTINGKAH GOBLOK, USERBOTnya GUA MATIIN NAJIS BANGET DIPAKE JAMET KEK LU.\nCredits: @lahtololdah"
         )
