@@ -190,10 +190,10 @@ ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT", "False"))
 YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", None)
 
 # Untuk Perintah .vegetabot (alive)
-VEGETA_TEKS_KOSTUM = os.environ.get("SAYONARA_TEKS_KOSTUM") or "ㅤ"
+VEGETA_TEKS_KOSTUM = os.environ.get("KONTOL_TEKS_KOSTUM") or "ㅤ"
 
 # Untuk Melihat Repo
-REPO_NAME = os.environ.get("REPO_NAME") or "KITARO-USERBOT"
+REPO_NAME = os.environ.get("REPO_NAME") or "KONTOL-USERBOT"
 
 # Default .alive Name
 ALIVE_NAME = os.environ.get("ALIVE_NAME", None)
@@ -212,7 +212,7 @@ ZIP_DOWNLOAD_DIRECTORY = os.environ.get("ZIP_DOWNLOAD_DIRECTORY", "./zips")
 BITLY_TOKEN = os.environ.get("BITLY_TOKEN", None)
 
 # Bot Name
-TERM_ALIAS = os.environ.get("TERM_ALIAS", "KITARO-USERBOT")
+TERM_ALIAS = os.environ.get("TERM_ALIAS", "KONTOL-USERBOT")
 
 # Bot Version
 BOT_VER = os.environ.get("BOT_VER", "7.0")
@@ -225,11 +225,11 @@ S_PACK_NAME = os.environ.get("S_PACK_NAME", None)
 
 # Default .alive Logo
 ALIVE_LOGO = os.environ.get(
-    "ALIVE_LOGO") or "https://telegra.ph/file/e84dd9a8cba5fa80bf4d0.jpg"
+    "ALIVE_LOGO") or "https://telegra.ph/file/663c676d584b166c27c6d.jpg"
 
 # Default .helpme logo
 HELP_LOGO = os.environ.get(
-   "HELP_LOGO") or "https://telegra.ph/file/e84dd9a8cba5fa80bf4d0.jpg"
+   "HELP_LOGO") or "https://telegra.ph/file/663c676d584b166c27c6d.jpg"
 
 # Default .alive Instagram
 IG_ALIVE = os.environ.get("IG_ALIVE") or "instagram.com/arman_nasution123"
