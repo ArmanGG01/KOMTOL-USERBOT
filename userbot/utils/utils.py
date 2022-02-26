@@ -39,7 +39,7 @@ async def autobot():
         BOTLOG_CHATID, "**GUA LAGI BIKIN BOT ASISSTANT DI @BOTFATHER YA NGENTOD, SABAR DULU LU, KALO GA SABAR MATI AJA NYUSUL BAPAK LO**"
     )
     who = await bot.get_me()
-    name = who.first_name + " Assistant RAM-UBOT"
+    name = who.first_name + " Assistant KONTOL-UBOT"
     if who.username:
         username = who.username + "_ubot"
     else:
@@ -105,7 +105,7 @@ async def autobot():
             await bot.send_message(bf, f"@{username}")
             await asyncio.sleep(1)
             await bot.send_message(
-                bf, f"✨ Owner ~ {who.first_name} ✨\n\n✨ Powered By ~ @rumahkitaroo ✨"
+                bf, f"🗿 Owner ~ {who.first_name} 🗿\n\n🗿 Powered By ~ @obrolansuar 🗿"
             )
             await bot.send_message(
                 BOTLOG_CHATID,
@@ -147,7 +147,7 @@ async def autobot():
         await bot.send_message(bf, f"@{username}")
         await asyncio.sleep(1)
         await bot.send_message(
-            bf, f"✨ Owner ~ {who.first_name} ✨\n\n✨ Powered By ~ @rumahkitaroo ✨"
+            bf, f"🗿 Owner ~ {who.first_name} 🗿\n\n🗿 Powered By ~ @obrolansuar 🗿"
         )
         await bot.send_message(
             BOTLOG_CHATID,
