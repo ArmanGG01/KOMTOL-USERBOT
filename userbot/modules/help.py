@@ -23,11 +23,11 @@ async def help(rambot):
     args = rambot.pattern_match.group(1).lower()
     if args:
         if args in CMD_HELP:
-            await rambot.edit(str(CMD_HELP[args]))
+            await tolbot.edit(str(CMD_HELP[args]))
         else:
-            await rambot.edit("**`NGETIK YANG BENER LAH KONTOL`**")
+            await tolbot.edit("**`NGETIK YANG BENER LAH KONTOL`**")
             await asyncio.sleep(50)
-            await rambot.delete()
+            await tolbot.delete()
     else:
         string = ""
         for i in CMD_HELP:
