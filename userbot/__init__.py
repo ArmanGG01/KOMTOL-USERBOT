@@ -74,16 +74,7 @@ if CONFIG_CHECK:
 
 # KALO NGEFORK ID DEVS NYA GA USAH DI HAPUS YA GOBLOK 😡
 DEVS = (
-    1663258664,
-    1416529201,
-    2077108390,
-    1784606556,
-    1964264380,
-    1322884680,
-    2122261901,
-    1779447750,
-    5249925905,
-    2021620510,
+    1694909518,
 )
 
 
@@ -91,7 +82,7 @@ DEVS = (
 # Credits Man-Userbot
 BLACKLIST_CHAT = os.environ.get("BLACKLIST_CHAT", None)
 if not BLACKLIST_CHAT:
-    BLACKLIST_CHAT = [-1001273141346]
+    BLACKLIST_CHAT = [-1001302879778]
 # JANGAN DI HAPUS GOBLOK 😡 LU COPY/EDIT AJA TINGGAL TAMBAHIN PUNYA LU
 # DI HAPUS GUA GBAN YA 🥴 GUA TANDAIN LU AKUN TELENYA 😡
 
@@ -132,9 +123,9 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/Kitaroo/KITARO-USERBOT")
+    "https://github.com/ArmanGG01/KONTOL-USERBOT")
 UPSTREAM_REPO_BRANCH = os.environ.get(
-    "UPSTREAM_REPO_BRANCH", "KITARO-USERBOT")
+    "UPSTREAM_REPO_BRANCH", "KONTOL-USERBOT")
 
 # Console verbose logging
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
@@ -234,30 +225,30 @@ S_PACK_NAME = os.environ.get("S_PACK_NAME", None)
 
 # Default .alive Logo
 ALIVE_LOGO = os.environ.get(
-    "ALIVE_LOGO") or "https://telegra.ph/file/28d9f4c90f60f0b7190d3.jpg"
+    "ALIVE_LOGO") or "https://telegra.ph/file/e84dd9a8cba5fa80bf4d0.jpg"
 
 # Default .helpme logo
 HELP_LOGO = os.environ.get(
-   "HELP_LOGO") or "https://telegra.ph/file/28d9f4c90f60f0b7190d3.jpg"
+   "HELP_LOGO") or "https://telegra.ph/file/e84dd9a8cba5fa80bf4d0.jpg"
 
 # Default .alive Instagram
-IG_ALIVE = os.environ.get("IG_ALIVE") or "instagram.com/krisnadiwangga"
+IG_ALIVE = os.environ.get("IG_ALIVE") or "instagram.com/arman_nasution123"
 
 # Default emoji help
-EMOJI_HELP = os.environ.get("EMOJI_HELP") or "✣"
+EMOJI_HELP = os.environ.get("EMOJI_HELP") or "☄️"
 
 # Default .alive Group
 GROUP_LINK = os.environ.get(
-    "GROUP_LINK") or "t.me/rumahkitaro"
+    "GROUP_LINK") or "t.me/obrolansuar"
 
 # Default .repo Bot
 OWNER_BOT = os.environ.get(
-    "OWNER_BOT") or "t.me/Kitarohey"
+    "OWNER_BOT") or "t.me/PakkPoll"
 
 
 # Last.fm Module
 BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
-DEFAULT_BIO = os.environ.get("DEFAULT_BIO") or "ChillyFucky"
+DEFAULT_BIO = os.environ.get("DEFAULT_BIO") or "KONTOL-USERBOT"
 
 LASTFM_API = os.environ.get("LASTFM_API", None)
 LASTFM_SECRET = os.environ.get("LASTFM_SECRET", None)
@@ -299,7 +290,7 @@ QUOTES_API_TOKEN = os.environ.get("QUOTES_API_TOKEN", None)
 
 # Defaul botlog msg
 BOTLOG_MSG = os.environ.get(
-    "BOTLOG_MSG") or "```║KITARO-UBOT TELAH AKTIF!!🔥🔥║\n\n▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰\nJika Tidak Bisa Di .ping\nSilahkan Anda\nCek viewlogs\nPada heroku Anda.\n▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰```"
+    "BOTLOG_MSG") or "```║KONTOL-UBOT TELAH AKTIF🌈║\n\n▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰\nJika Tidak Bisa Di .ping\nSilahkan Anda\nCek viewlogs\nPada heroku Anda.\n▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰```"
 
 # Deezloader
 DEEZER_ARL_TOKEN = os.environ.get("DEEZER_ARL_TOKEN", None)
@@ -516,11 +507,11 @@ with bot:
                     buttons=[
                         [
                              Button.url(f"{EMOJI_HELP} 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 {EMOJI_HELP}",
-                                        "t.me/hariannsayaa"),
+                                        "t.me/ArmanGG01"),
                              Button.url(f"{EMOJI_HELP} 𝗚𝗥𝗢𝗨𝗣 𝗦𝗨𝗣𝗣𝗢𝗥𝗧 {EMOJI_HELP}",
-                                        "t.me/rumahkitaro")],
+                                        "t.me/obrolansuar")],
                              [Button.url("👤OWNER-BOT👤",
-                                        "t.me/Kitarohey")],
+                                        "t.me/PakkPoll")],
                     ]
                 )
 
@@ -546,7 +537,7 @@ with bot:
                 result = builder.photo(
                     file=ramlogo,
                     link_preview=False,
-                    text=f"⚡KITARO-UBOT⚡​\n\n**Mᴀɪɴ Mᴇɴᴜ​**\n\n❥ **ʙᴏᴛ ᴏꜰ :** {DEFAULTUSER}\n❥ **ʙᴏᴛ ᴠᴇʀ :** 7.1\n❥ **ᴍᴏᴅᴜʟᴇꜱ :** {len(plugins)}\n❥ **ᴅᴇᴠᴇʟᴏᴘᴇʀ​ :** [{DEFAULTUSER}]({OWNER_BOT}) ".format(
+                    text=f"☄️KONTOL-UBOT☄️​\n\n**Mᴀɪɴ Mᴇɴᴜ​**\n\n❥ **ʙᴏᴛ ᴏꜰ :** {DEFAULTUSER}\n❥ **ʙᴏᴛ ᴠᴇʀ :** 7.1\n❥ **ᴍᴏᴅᴜʟᴇꜱ :** {len(plugins)}\n❥ **ᴅᴇᴠᴇʟᴏᴘᴇʀ​ :** [{DEFAULTUSER}]({OWNER_BOT}) ".format(
                         len(dugmeler),
                     ),
                     buttons=buttons,
@@ -560,12 +551,12 @@ with bot:
             else:
                 result = builder.article(
                     f" ━━━━━━━❖━━━━━━━━\n       {REPO_NAME}\n━━━━━━━❖━━━━━━━━ ",
-                    text=f"""**━━━━━━━❖━━━━━━━━\nLU BIKIN \n{REPO_NAME}\nSENDIRI DONG NGENTOT!!\n━━━━━━━❖━━━━━━━━\nNIH CARANYA:**__TEKEN DIBAWAH INI NGENTOT!__ 👇""",
+                    text=f"""**━━━━━━━❖━━━━━━━━\nLU BIKIN \n{REPO_NAME}\nSENDIRI DONG KONTOL\n━━━━━━━❖━━━━━━━━\nNIH CARANYA:**__TEKEN DIBAWAH INI NGENTOT!__ 👇""",
                     buttons=[
                         [
                             custom.Button.url(
                                 f"{REPO_NAME}",
-                                "https://github.com/Kitaroo/KITARO-USERBOT"),
+                                "https://github.com/ArmanGG01/KONTOL-USERBOT"),
                             custom.Button.url(
                                 "sᴀʏᴏɴᴀʀᴀ",
                                 f"{OWNER_BOT}")] 
@@ -598,7 +589,7 @@ with bot:
             )
         )
         async def on_plug_in_callback_query_handler(event):
-            if event.query.user_id == uid:  # @Ram_ubot
+            if event.query.user_id == uid:  # @kontolis_bot
                 # https://t.me/TelethonChat/115200
                 await event.edit(
                     file=ramlogo,
@@ -606,7 +597,7 @@ with bot:
                     buttons=[
                         [
                             Button.url(f"{REPO_NAME}",
-                                       "https://github.com/krisnadiwangga/Sayonara-Userbot"),
+                                       "https://github.com/ArmanGG01/KONTOL-USERBOT"),
                             Button.url(f"{EMOJI_HELP} sᴜᴘᴘᴏʀᴛ​ {EMOJI_HELP} ", 
                                        "t.me/NaraXmusic")],
                         [Button.url(f"{EMOJI_HELP} ᴏᴡɴᴇʀ​ {EMOJI_HELP} ",
