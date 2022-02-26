@@ -2,9 +2,9 @@
 
 on:
   push:
-    branches: [ KONTOL-USERBOT ]
+    branches: [ KONTOL-UBOT ]
   pull_request:
-    branches: [ KONTOL-USERBOT ]
+    branches: [ KONTOL-UBOT ]
 
 jobs:
   build:
