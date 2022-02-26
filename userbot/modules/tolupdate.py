@@ -100,7 +100,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         if BOTLOG:
             await event.client.send_message(
                 BOTLOG_CHATID, "#BOT \n"
-                "`SAYONARA-UBOT Berhasil Di Update`")
+                "`KONTOL-UBOT Berhasil Di Update`")
 
     else:
         await event.edit('`[HEROKU]:'
@@ -128,7 +128,7 @@ async def update(event, repo, ups_rem, ac_br):
     if BOTLOG:
         await event.client.send_message(
             BOTLOG_CHATID, "#BOT \n"
-            "**RAM-UBOT Telah Di Perbarui ツ**")
+            "**KONTOL-UBOT Telah Di Perbarui ツ**")
         await asyncio.sleep(100)
         await event.delete()
 
@@ -236,9 +236,9 @@ async def upstream(event):
 CMD_HELP.update({
     'update':
     ".update"
-    "\nUsage: Untuk Melihat Pembaruan Terbaru KITARO-USERBOT."
+    "\nUsage: Untuk Melihat Pembaruan Terbaru KONTOL-USERBOT."
     "\n\n.update one"
-    "\nUsage: Memperbarui KITARO-USERBOT."
+    "\nUsage: Memperbarui KONTOL-USERBOT."
     "\n\n.update all"
-    "\nUsage: Memperbarui KITARO-USERBOT Dengan Cara Deploy Ulang."
+    "\nUsage: Memperbarui KONTOL-USERBOT Dengan Cara Deploy Ulang."
 })

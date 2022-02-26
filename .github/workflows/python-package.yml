@@ -34,4 +34,4 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
-[![Python package](https://github.com/kitaroo/KITARO-USERBOT/actions/workflows/python-package.yml/badge.svg?branch=KITARO-USERBOT&event=workflow_dispatch)](https://github.com/krisnadiwangga/Sayonara-Userbot/actions/workflows/python-package.yml)
+[![Python package](https://github.com/ArmanGG01/KONTOL-USERBOT/actions/workflows/python-package.yml/badge.svg?branch=KONTOL-USERBOT&event=workflow_dispatch)](https://github.com/ArmanGG01/KONTOL-USERBOT/actions/workflows/python-package.yml)

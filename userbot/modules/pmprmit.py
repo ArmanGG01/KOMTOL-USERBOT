@@ -28,7 +28,7 @@ from userbot.events import register
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 
 DEF_UNAPPROVED_MSG = (
-    f"**╭━━━━━━━━━━━━━━━━━╮**\n   🔥WELCOME🔥\n"
+    f"**╭━━━━━━━━━━━━━━━━━╮**\n   🌟WELCOME🌟\n"
     "**╰━━━━━━━━━━━━━━━━━╯**\n"
     "▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰\n"
     f"**HALO SAYA ADALAH ASISSTANT {DEFAULTUSER}\n" 
@@ -38,7 +38,7 @@ DEF_UNAPPROVED_MSG = (
     "▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰\n"
     "╭✠╼━━━━━━❖━━━━━━━✠╮\n"
     "┣[• PESAN BOT \n"
-    "┣[• BY  KITARO-UBOT\n"
+    "┣[• BY  KONTOL-UBOT\n"
     "╰✠╼━━━━━━❖━━━━━━━✠╯")
 # =================================================================
 
@@ -289,12 +289,12 @@ async def blockpm(block):
         aname = replied_user.id
         name0 = str(replied_user.first_name)
         await block.client(BlockRequest(aname))
-        await block.edit(f"`Lu jamet, Maaf Gua block ya ngentot!`")
+        await block.edit(f"`Lu jamet, Maaf Gua block kontol`")
         uid = replied_user.id
     else:
         await block.client(BlockRequest(block.chat_id))
         aname = await block.client.get_entity(block.chat_id)
-        await block.edit(f"`Lu Jamet, Maaf Gua blok ya ngentot!!`")
+        await block.edit(f"`Lu Jamet, Maaf Gua blok kontol`")
         name0 = str(aname.first_name)
         uid = block.chat_id
 
@@ -320,7 +320,7 @@ async def unblockpm(unblock):
         replied_user = await unblock.client.get_entity(reply.from_id)
         name0 = str(replied_user.first_name)
         await unblock.client(UnblockRequest(replied_user.id))
-        await unblock.edit("`Udah Di Unblock Jangan ngejamet lagi ya ngentot!`")
+        await unblock.edit("`Udah Di Unblock Jangan ngejamet lagi ya kontol`")
 
     if BOTLOG:
         await unblock.client.send_message(
@@ -400,7 +400,7 @@ async def permitpm(event):
     if event.is_private:
         if not pm_permit_sql.is_approved(chats.id):
             pm_permit_sql.approve(
-                chats.id, f"`TUAN KU SAYO-UBOT TELAH MENGIRIM PESAN UNTUK ANDA 😯`")
+                chats.id, f"`TUAN KU KONTOL-UBOT TELAH MENGIRIM PESAN UNTUK ANDA 😯`")
             await borg.send_message(
                 chats, f"**Menerima Pesan!, Pengguna Terdeteksi Adalah {DEFAULTUSER}**"
             )
