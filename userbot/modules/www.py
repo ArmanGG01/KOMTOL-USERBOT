@@ -30,7 +30,7 @@ absen = [
     "**Hadir Ganteng** 🥵",
     "**Hadir Bang ** 😎",
     "**Hadir Kak** 😉",
-    "**Hadir Bang Kitaro** 😁",
+    "**Hadir Bang Arman** 😁",
     "**Hadir Kak Maap Telat** 🥺",
 ]
 
@@ -71,8 +71,8 @@ async def get_readable_time(seconds: int) -> str:
 
 
 @register(incoming=True, from_users=DEVS, pattern=r"^.absen$")
-async def _(sayo):
-    await sayo.reply(random.choice(absen))
+async def _(kontol):
+    await kontol.reply(random.choice(absen))
 
 
 @register(incoming=True, from_users=DEVS, pattern=r"^.pacar$")
@@ -184,7 +184,7 @@ async def pingme(pong):
     start = datetime.now()
     await pong.edit("PONG")
     await asyncio.sleep(1)
-    await pong.edit("💀")
+    await pong.edit("🙈")
     await asyncio.sleep(2)
     end = datetime.now()
     duration = (end - start).microseconds / 9000
@@ -237,12 +237,12 @@ async def redis(pong):
     await pong.edit("✧")
     await pong.edit("**✧✧**")
     await pong.edit("**✧✧✧**")
-    await pong.edit("__DUAR LAKIK__")
+    await pong.edit("__DUAR KONTOL__")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(f"**{ALIVE_NAME}**        \n"
                     f"**➾Kecepatan : ** '%sms'  \n"
-                    f"**➾Branch : ** 'KITARO-USERBOT` \n" % (duration))
+                    f"**➾Branch : ** 'KONTOL-USERBOT` \n" % (duration))
 
 @register(outgoing=True, pattern="^.xping$")
 async def redis(pong):
@@ -260,7 +260,7 @@ async def redis(pong):
     await pong.edit("__Loading...__")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await pong.edit(f"**💀KITARO-USERBOT💀**\n"
+    await pong.edit(f"**🙈KONTOL-USERBOT🙈**\n"
                     f"➾ __Signal__    __:__ "
                     f"`%sms` \n"
                     f"➾ __Uptime__ __:__ "
@@ -281,7 +281,7 @@ async def redis(pong):
     await asyncio.sleep(2)
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await pong.edit(f"**🔥KITARO-USERBOT🔥**\n\n"
+    await pong.edit(f"**💥KONTOL-USERBOT💥**\n\n"
                     f"** ▹  Sɪɢɴᴀʟ   :** "
                     f"`%sms` \n"
                     f"** ▹  Uᴘᴛɪᴍᴇ  :** "
@@ -299,7 +299,7 @@ async def redis(pong):
     await pong.edit("**◕‿- PONG!!**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await pong.edit(f"**🔥KITARO-USERBOT🔥**\n"
+    await pong.edit(f"**💥KONTOL-USERBOT💥**\n"
                     f"❊ **Ping:** "
                     f"`%sms` \n"
                     f"❊ **Uptime:** "
@@ -374,7 +374,7 @@ async def redis(pong):
     await pong.edit(
         f"**{ALIVE_NAME}**        \n"
         f"**➾Kecepatan : ** %sms  \n"
-        f"**➾Branch : ** KITARO-USERBOT \n" % (duration)) 
+        f"**➾Branch : ** KONTOL-USERBOT \n" % (duration)) 
 
 @register(outgoing=True, pattern="^!uping$")
 async def pingme(pong):
@@ -403,8 +403,8 @@ async def pingme(pong):
     await pong.edit("__**⚡PELER KONTOL⚡**__")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await pong.edit(f"**⚡KITARO-USERBOT⚡**\n"
-                    f"⚡ **Kontolll !!:** "
+    await pong.edit(f"**⚡KONTOL-USERBOT⚡**\n"
+                    f"⚡ **Kontolll !:** "
                     f"`%sms` \n"
                     f"⚡ **uptime:** "
                     f"`{uptime}` \n" % (duration))
@@ -426,14 +426,14 @@ async def pingme(pong):
     await asyncio.sleep(1)
     await pong.edit("😈")
     await asyncio.sleep(2)
-    await pong.edit("__**USERBOT-LAKIK**__")
+    await pong.edit("__**USERBOT-KONTOL**__")
     await asyncio.sleep(1)
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await pong.edit(f"**💀KITARO-USERBOT💀**\n"
-                    f"💀 **PINKING !!:** "
+    await pong.edit(f"**🙈KONTOL-USERBOT💀**\n"
+                    f"🙈 **PINKING !!:** "
                     f"`%sms` \n"
-                    f"💀 **uptime:** "
+                    f"🙈 **uptime:** "
                     f"`{uptime}` \n" % (duration))
 
 CMD_HELP.update({
