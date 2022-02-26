@@ -15,7 +15,7 @@ async def typewriter(typew):
 # Create by myself @localheart
 
 
-@register(outgoing=True, pattern='^.punten(?: |$)(.*)')
+@register(outgoing=True, pattern='^.misi(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("`\n┻┳|―-∩`"
@@ -28,34 +28,34 @@ async def typewriter(typew):
                      "\n**Permisi Aku mau nimbrung Kk..**")
 
 
-@register(outgoing=True, pattern='^.sayo(?: |$)(.*)')
+@register(outgoing=True, pattern='^.kon(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("**kyy Peler☑️**")
-    await typew.edit("**kyy Peler✅**")
+    await typew.edit("**Mam Kontol☑️**")
+    await typew.edit("**Man Kontol✅**")
     sleep(1)
-    await typew.edit("**Sayo Gilaa☑️**")
-    await typew.edit("**Sayo Gilaa✅**")
+    await typew.edit("**Jeje Gilaa☑️**")
+    await typew.edit("**Jeje Gilaa✅**")
     sleep(2)
-    await typew.edit("**Skyzu Depresi☑️**")
-    await typew.edit("**Skyzu Depresi✅**")
+    await typew.edit("**Icil Depresi☑️**")
+    await typew.edit("**Icil Depresi✅**")
     sleep(2)
-    await typew.edit("**Dior Gajelas☑️**")
-    await typew.edit("**Dior Gajelas✅**")
+    await typew.edit("**Agatha Gajelas☑️**")
+    await typew.edit("**Agatha Gajelas✅**")
     sleep(2)
-    await typew.edit("**Om kyy goblok!☑️**")
-    await typew.edit("**Om kyy Goblok banget!✅**")
+    await typew.edit("**Om Man Cabul!☑️**")
+    await typew.edit("**Om Man Cabul banget!✅**")
     sleep(2)
-    await typew.edit("**Sena kang gabut!☑️**")
-    await typew.edit("**Sena kang gabut!✅**")
+    await typew.edit("**Andin kang gabut!☑️**")
+    await typew.edit("**Andin kang gabut!✅**")
     sleep(2)
-    await typew.edit("**Randi,MengRibet☑️**")
-    await typew.edit("**Randi,MengRibet✅**")
+    await typew.edit("**Lia,MengRibet☑️**")
+    await typew.edit("**Lia,MengRibet✅**")
     sleep(2)
-    await typew.edit("**Om ton,Mengintil☑️**")
-    await typew.edit("**Om ton,Mengintil✅**")
+    await typew.edit("**Om Sein,Mengentot☑️**")
+    await typew.edit("**Om Sein,Mengentot✅**")
     sleep(3)
-    await typew.edit("**CUMA KITARO YANG BENER !**")
+    await typew.edit("**CUMA KONTOL YANG BENER !**")
 
 
 @register(outgoing=True, pattern='^.lahk(?: |$)(.*)')
@@ -96,20 +96,20 @@ async def typewriter(typew):
     sleep(1)
     await typew.edit("`SUCCESSFULLY COMPELED`")
     sleep(1)
-    await typew.edit("`💀SUPPORT` @RUMAHKITARO 💀 CENGHA` @HARIANNSAYAA")
+    await typew.edit("`💀SUPPORT` @obrolansuar 💀 CENGHA` @DeployBot01")
 
 
 
 
 CMD_HELP.update({
     "sayobot":
-    "`.sayo`\
+    "`.kon`\
     \nUsage: menampilkan alive bot.\
     \n\n`.sadboy`\
     \n\n`.lahk`\
     \nUsage: hiks\
     \n\n`.gc`\
     \nUsage: support\
-    \n\n`.punten` ; `.vegeta`\
+    \n\n`.misi` ; `.vegeta`\
     \nUsage: misi."
 })
