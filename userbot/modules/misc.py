@@ -112,10 +112,10 @@ async def repo_is_here(wannasee):
     await wannasee.edit(
         "**Hey**, I am using **☄️KONTOL-USERBOT☄️** \n"
         "┏━━━━━━━━━━°⌜ 喜多郎 ⌟°━━━━━━━━┓\n"
-        "│ **Repo Userbot :** [ɢɪᴛʜᴜʙ](https://github.com/ArmanGG01/KONTOL-USERBOT)\n"
-        "│ **Owner Bot     :** [ᴋɪᴛᴀʀᴏ](t.me/PakkPoll)\n"
-        "│ **Instagram     :** [ɪɴsᴛᴀɢʀᴀᴍ](instagram.com/arman_nasution123)\n"
-        "│ **Support         :** [ɢʀᴜᴘ](https://t.me/obrolansuar)\n"
+        "│ **Repo Userbot :** [𝙶𝙸𝚃𝙷𝚄𝙱](https://github.com/ArmanGG01/KONTOL-USERBOT)\n"
+        "│ **Owner Bot     :** [𝙰𝚁𝙼𝙰𝙽](t.me/PakkPoll)\n"
+        "│ **Instagram     :** [𝙸𝙽𝚂𝚃𝙰𝙶𝚁𝙰𝙼](instagram.com/arman_nasution123)\n"
+        "│ **Support         :** [𝙶𝚁𝙾𝚄𝙿](https://t.me/obrolansuar)\n"
         "┗━━━━━━━━━━°⌜ ジミー ⌟°━━━━━━━━┛\n"
     )
 
