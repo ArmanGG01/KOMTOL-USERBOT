@@ -87,7 +87,7 @@ async def killdabot(event):
 async def reedme(e):
     await e.edit(
         "Here's Something for You to Read :\n"
-        "\n[✨ Kitaro-Userbot Repo](https://github.com/Kitaroo/KITARO-USERBOT/blob/KITARO-USERBOT/README.md)"
+        "\n[✨ Kontol-Userbot Repo](https://github.com/ArmanGG01/KONTOL-USERBOT/blob/KONTOL-USERBOT/README.md)"
         "\n[Setup Guide - Basic](https://telegra.ph/How-to-host-a-Telegram-Userbot-11-02)"
         "\n[Special - Note](https://telegra.ph/Special-Note-11-02)")
 
@@ -110,12 +110,12 @@ async def repeat(rep):
 async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     await wannasee.edit(
-        "**Hey**, I am using **✨KITARO-UBOT✨** \n"
+        "**Hey**, I am using **☄️KONTOL-USERBOT☄️** \n"
         "┏━━━━━━━━━━°⌜ 喜多郎 ⌟°━━━━━━━━┓\n"
-        "│ **Repo Userbot :** [ɢɪᴛʜᴜʙ](https://github.com/kitaroo/KITARO-USERBOT)\n"
-        "│ **Owner Bot     :** [ᴋɪᴛᴀʀᴏ](t.me/Kitarohey)\n"
-        "│ **Instagram     :** [ɪɴsᴛᴀɢʀᴀᴍ](instagram.com/jimmymhndra)\n"
-        "│ **Support         :** [ɢʀᴜᴘ](https://t.me/rumahkitaroo)\n"
+        "│ **Repo Userbot :** [ɢɪᴛʜᴜʙ](https://github.com/ArmanGG01/KONTOL-USERBOT)\n"
+        "│ **Owner Bot     :** [ᴋɪᴛᴀʀᴏ](t.me/PakkPoll)\n"
+        "│ **Instagram     :** [ɪɴsᴛᴀɢʀᴀᴍ](instagram.com/arman_nasution123)\n"
+        "│ **Support         :** [ɢʀᴜᴘ](https://t.me/obrolansuar)\n"
         "┗━━━━━━━━━━°⌜ ジミー ⌟°━━━━━━━━┛\n"
     )
 
@@ -275,13 +275,13 @@ CMD_HELP.update({
     \n↳ : Dapatkan item acak dari daftar item.",
     "sleep": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.sleep <seconds>`\
     \n↳ : `.sleep`\
-    \n  •  **Function : Biarkan Sayonara-Userbot tidur selama beberapa detik.",
+    \n  •  **Function : Biarkan Kontol-Userbot tidur selama beberapa detik.",
     "shutdown": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.shutdown`\
     \n↳ : Mematikan bot",
     "repo": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.repo`\
-    \n↳ : Menampilan link Repository Sayonara-Userbot.",
+    \n↳ : Menampilan link Repository Kontol-Userbot.",
     "string": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.string`\
-    \n↳: Menampilkan link String Sayonara-Userbot",
+    \n↳: Menampilkan link String Kontol-Userbot",
     "readme": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙 `.readme`\
     \n↳ : Menyediakan tautan untuk mengatur userbot dan modulnya.",
     "repeat": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.repeat <no> <text>`\
