@@ -36,7 +36,7 @@ absen = [
 
 pacar = [
     "**Aku padamu** 💘",
-    "**Bg Kitaro ganteng** 😎",
+    "**Bg Arman ganteng** 😎",
     "**Kenapa ganteng** 🐷",
     "**Mau ga bang jadi pacar aku?** 😁",
     "**Siapa yang ganggu kau** 🥺",
