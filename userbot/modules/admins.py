@@ -145,7 +145,7 @@ async def promote(promt):
     # Try to promote if current user is admin or creator
     try:
         await promt.client(EditAdminRequest(promt.chat_id, user.id, new_rights, rank))
-        await promt.edit("`Nah Udah Jadi Admin Baru Jangan Salh Guna Ya Ngntd!`")
+        await promt.edit("`Nah Udah Jadi Admin Baru Jangan Salh Guna Ya Kontol`")
         await sleep(5)
         await promt.delete()
 
@@ -176,7 +176,7 @@ async def demote(dmod):
         return await dmod.edit(NO_ADMIN)
 
     # If passing, declare that we're going to demote
-    await dmod.edit("`Otw Hapus Admin dulu ges...`")
+    await dmod.edit("`Otw Hapus Admin Jamet dulu ges...`")
     rank = "Admin"  # dummy rank, lol.
     user = await get_user_from_event(dmod)
     user = user[0]
@@ -200,7 +200,7 @@ async def demote(dmod):
     # Assume we don't have permission to demote
     except BadRequestError:
         return await dmod.edit(NO_PERM)
-    await dmod.edit("`Admin Berhasil Dilepas! Makanya Jangan semena mena tolol`")
+    await dmod.edit("`Admin Berhasil Dilepas! Makanya Jangan semena mena kontol")
     await sleep(5)
     await dmod.delete()
 
@@ -290,7 +290,7 @@ async def nothanos(unbon):
 
     try:
         await unbon.client(EditBannedRequest(unbon.chat_id, user.id, UNBAN_RIGHTS))
-        await unbon.edit("```Udah di Unban Jangan Jadi Jamet!```")
+        await unbon.edit("```Udah di Unban Jangan Ngisep Kontol Mulu Mangkanya``")
         await sleep(3)
         await unbon.delete()
 
