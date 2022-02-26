@@ -29,6 +29,6 @@ jobs:
           commit_message: 'krisnadiwangga: auto fixes'
           commit_options: '--no-verify --signoff'
           repository: .
-          commit_user_name: krisnadiwangga
+          commit_user_name: ArmanMuliansyah
           commit_user_email: djkrisna009@gmail.com
-          commit_author: krisnadiwangga <djkrisna009@gmail.com>
+          commit_author: ArmanMuliansyaj <armanmuliansyah123@gmail.com>
