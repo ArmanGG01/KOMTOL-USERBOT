@@ -55,7 +55,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         if HEROKU_APP_NAME is None:
             await event.edit(
                 '`[HEROKU]: Harap Siapkan Variabel` **HEROKU_APP_NAME** `'
-                ' untuk dapat deploy perubahan terbaru dari KITARO-USERBOT.`'
+                ' untuk dapat deploy perubahan terbaru dari KONTOL-USERBOT.`'
             )
             repo.__del__()
             return
@@ -65,7 +65,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
                 break
         if heroku_app is None:
             await event.edit(
-                f'{txt}\n`Kredensial Heroku tidak valid untuk deploy RAM-UBOT dyno.`'
+                f'{txt}\n`Kredensial Heroku tidak valid untuk deploy KONTOL-UBOT dyno.`'
             )
             return repo.__del__()
         await event.edit(f'`{REPO_NAME}:'
@@ -190,13 +190,13 @@ async def upstream(event):
 
     if changelog == '' and force_update is False:
         await event.edit(
-            f"\n**{REPO_NAME} Sudah Versi Terbaru**\n")
+            f"\n**{KONTOL-USERBOT} Sudah Versi Terbaru**\n")
         await asyncio.sleep(15)
         await event.delete()
         return repo.__del__()
 
     if conf is None and force_update is False:
-        changelog_str = f"**Pembaruan Untuk {REPO_NAME} [{REPO_NAME}]:\n\n✨Pembaruan:**\n`{changelog}`"
+        changelog_str = f"**Pembaruan Untuk {KONTOL-USERBOT} [{KONTOL-USERBOT}]:\n\n✨Pembaruan:**\n`{changelog}`"
         if len(changelog_str) > 4096:
             await event.edit("`Changelog Terlalu Besar, Lihat File Untuk Melihatnya.`")
             file = open("output.txt", "w+")
@@ -210,7 +210,7 @@ async def upstream(event):
             remove("output.txt")
         else:
             await event.edit(changelog_str)
-        return await event.respond(f"**Perintah Untuk Update {REPO_NAME}**\n >`.update one`\n >`.update all`\n\n__Untuk Meng Update Fitur Terbaru Dari {REPO_NAME}.__")
+        return await event.respond(f"**Perintah Untuk Update {KONTOL-USERBOT}**\n >`.update one`\n >`.update all`\n\n__Untuk Meng Update Fitur Terbaru Dari {KONTOL-USERBOT}.__")
 
     if force_update:
         await event.edit(
