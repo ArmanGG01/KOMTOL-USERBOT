@@ -18,7 +18,7 @@ async def _(hacker):
                 t = await hacker.ban_time(t)
             except BaseException:
                 return await hacker.edit("`Incorrect Format`")
-    await hacker.edit(f"`Kebanyakan fake hidup lu ngentot!`")
+    await hacker.edit("`Kebanyakan fake hidup lu ngentot!`")
     await hacker.edit(f"`Memulai Fake Typing {t} detik.`")
     async with hacker.client.action(hacker.chat_id, "typing"):
         await asyncio.sleep(t)

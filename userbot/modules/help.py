@@ -20,8 +20,7 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 @register(outgoing=True, pattern="^.help(?: |$)(.*)")
 async def help(rambot):
     """ For .help command,"""
-    args = rambot.pattern_match.group(1).lower()
-    if args:
+    if args := rambot.pattern_match.group(1).lower():
         if args in CMD_HELP:
             await tolbot.edit(str(CMD_HELP[args]))
         else:
@@ -31,7 +30,7 @@ async def help(rambot):
     else:
         string = ""
         for i in CMD_HELP:
-            string += "`" + str(i)
+            string += f"`{str(i)}"
             string += f"`\t {EMOJI_HELP}  "
         await rambot.edit(f"**{REPO_NAME}**\n\n"
                          f"**{EMOJI_HELP} 𝙿𝙴𝙼𝙸𝙻𝙸𝙺 𝙱𝙾𝚃 : {DEFAULTUSER}**\n**{EMOJI_HELP}  𝙼𝙾𝙳𝚄𝙻𝙴𝚂 : {len(modules)}**\n\n"

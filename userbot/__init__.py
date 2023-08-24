@@ -6,6 +6,7 @@
 # own by @ChillySkilly / @RemixSupport
 """Userbot initialization."""
 
+
 import os
 import time
 import re
@@ -43,10 +44,9 @@ CMD_HELP = {}
 INT_PLUG = ""
 LOAD_PLUG = {}
 
-# Bot Logs setup:
-CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
-
-if CONSOLE_LOGGER_VERBOSE:
+if CONSOLE_LOGGER_VERBOSE := sb(
+    os.environ.get("CONSOLE_LOGGER_VERBOSE", "False")
+):
     basicConfig(
         format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
         level=DEBUG,
@@ -61,12 +61,9 @@ if version_info[0] < 3 or version_info[1] < 8:
               "Multiple features depend on this. Bot quitting.")
     quit(1)
 
-# Check if the config was edited by using the already used variable.
-# Basically, its the 'virginity check' for the config file ;)
-CONFIG_CHECK = os.environ.get(
-    "___________PLOX_______REMOVE_____THIS_____LINE__________", None)
-
-if CONFIG_CHECK:
+if CONFIG_CHECK := os.environ.get(
+    "___________PLOX_______REMOVE_____THIS_____LINE__________", None
+):
     LOGS.info(
         "Please remove the line mentioned in the first hashtag from the config.env file"
     )
@@ -103,9 +100,7 @@ LOGSPAMMER = sb(os.environ.get("LOGSPAMMER", "False"))
 # Bleep Blop, this is a bot ;)
 PM_AUTO_BAN = sb(os.environ.get("PM_AUTO_BAN", "False"))
 
-# Send .chatid in any group with all your administration bots (added)
-G_BAN_LOGGER_GROUP = os.environ.get("G_BAN_LOGGER_GROUP", "")
-if G_BAN_LOGGER_GROUP:
+if G_BAN_LOGGER_GROUP := os.environ.get("G_BAN_LOGGER_GROUP", ""):
     G_BAN_LOGGER_GROUP = int(G_BAN_LOGGER_GROUP)
 
 # Heroku Credentials for updater.
@@ -274,8 +269,7 @@ TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TMP_DOWNLOAD_DIRECTORY",
 # Google Photos
 G_PHOTOS_CLIENT_ID = os.environ.get("G_PHOTOS_CLIENT_ID", None)
 G_PHOTOS_CLIENT_SECRET = os.environ.get("G_PHOTOS_CLIENT_SECRET", None)
-G_PHOTOS_AUTH_TOKEN_ID = os.environ.get("G_PHOTOS_AUTH_TOKEN_ID", None)
-if G_PHOTOS_AUTH_TOKEN_ID:
+if G_PHOTOS_AUTH_TOKEN_ID := os.environ.get("G_PHOTOS_AUTH_TOKEN_ID", None):
     G_PHOTOS_AUTH_TOKEN_ID = int(G_PHOTOS_AUTH_TOKEN_ID)
 
 # Genius Lyrics  API
@@ -429,7 +423,9 @@ def paginate_help(page_number, loaded_modules, prefix):
     helpable_modules = [p for p in loaded_modules if not p.startswith("_")]
     helpable_modules = sorted(helpable_modules)
     modules = [
-        custom.Button.inline("{} {} {} ".format(f"{EMOJI_HELP}", x, f"{EMOJI_HELP}"), data="ub_modul_{}".format(x))
+        custom.Button.inline(
+            f"{EMOJI_HELP} {x} {EMOJI_HELP} ", data=f"ub_modul_{x}"
+        )
         for x in helpable_modules
     ]
     pairs = list(zip(modules[::number_of_cols],
@@ -440,18 +436,19 @@ def paginate_help(page_number, loaded_modules, prefix):
     modulo_page = page_number % max_num_pages
     if len(pairs) > number_of_rows:
         pairs = pairs[
-            modulo_page * number_of_rows: number_of_rows * (modulo_page + 1)
+            modulo_page * number_of_rows : number_of_rows * (modulo_page + 1)
         ] + [
             (
                 custom.Button.inline(
-                    "⏮️", data="{}_prev({})".format(prefix, modulo_page)
+                    "⏮️", data=f"{prefix}_prev({modulo_page})"
                 ),
                 custom.Button.inline(
-                    f"{EMOJI_HELP} ᴄʟᴏsᴇ​ {EMOJI_HELP}", data="{}_close({})".format(prefix, modulo_page)
+                    f"{EMOJI_HELP} ᴄʟᴏsᴇ​ {EMOJI_HELP}",
+                    data=f"{prefix}_close({modulo_page})",
                 ),
                 custom.Button.inline(
-                    "⏭️", data="{}_next({})".format(prefix, modulo_page)
-                )
+                    "⏭️", data=f"{prefix}_next({modulo_page})"
+                ),
             )
         ]
     return pairs
@@ -652,9 +649,7 @@ with bot:
                 reply_pop_up_alert = (
                     help_string
                     if help_string is not None
-                    else "{} No document has been written for module.".format(
-                        modul_name
-                    )
+                    else f"{modul_name} No document has been written for module."
                 )
             else:
                 reply_pop_up_alert = f"WOI NGENTOT!! JANGAN PAKE PUNYA {DEFAULTUSER} DONG BABI."
