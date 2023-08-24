@@ -30,7 +30,7 @@ def register(**args):
     insecure = args.get('insecure', False)
 
     if pattern is not None and not pattern.startswith('(?i)'):
-        args['pattern'] = '(?i)' + pattern
+        args['pattern'] = f'(?i){pattern}'
 
     if "disable_edited" in args:
         del args['disable_edited']
@@ -62,9 +62,6 @@ def register(**args):
                 return
             if not LOGSPAMMER:
                 check.chat_id
-            else:
-                pass
-
             if not trigger_on_fwd and check.fwd_from:
                 return
 
@@ -78,14 +75,8 @@ def register(**args):
             try:
                 await func(check)
 
-            # Thanks to @kandnub for this HACK.
-            # Raise StopPropagation to Raise StopPropagation
-            # This needed for AFK to working properly
-
             except events.StopPropagation:
                 raise events.StopPropagation
-            # This is a gay exception and must be passed out. So that it doesnt
-            # spam chats
             except KeyboardInterrupt:
                 pass
             except BaseException:
@@ -135,15 +126,12 @@ def register(**args):
 
                     ftext += result
 
-                    file = open("error.log", "w+")
-                    file.write(ftext)
-                    file.close()
-
-            else:
-                pass
+                    with open("error.log", "w+") as file:
+                        file.write(ftext)
 
         if not disable_edited:
             bot.add_event_handler(wrapper, events.MessageEdited(**args))
         bot.add_event_handler(wrapper, events.NewMessage(**args))
         return wrapper
+
     return decorator

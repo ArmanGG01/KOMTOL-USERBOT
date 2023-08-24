@@ -34,8 +34,7 @@ GCAST_BLACKLIST = [
 
 @register(outgoing=True, pattern=r"^\.gcast(?: |$)(.*)")
 async def gcast(event):
-    xx = event.pattern_match.group(1)
-    if xx:
+    if xx := event.pattern_match.group(1):
         msg = xx
     elif event.is_reply:
         msg = await event.get_reply_message()
@@ -52,8 +51,6 @@ async def gcast(event):
                 if chat not in GCAST_BLACKLIST:
                     await event.client.send_message(chat, msg)
                     done += 1
-                elif chat not in GCAST_BLACKLIST:
-                    pass
             except BaseException:
                 er += 1
     await kk.edit(
@@ -63,8 +60,7 @@ async def gcast(event):
 
 @register(outgoing=True, pattern=r"^\.gucast(?: |$)(.*)")
 async def gucast(event):
-    xx = event.pattern_match.group(1)
-    if xx:
+    if xx := event.pattern_match.group(1):
         msg = xx
     elif event.is_reply:
         msg = await event.get_reply_message()
